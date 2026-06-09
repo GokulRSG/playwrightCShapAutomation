@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="29814527-3687-4ac0-b1f1-3824836f4d10" name="gokuln@LIN-5CG3091ZV3 2026-06-09 17:15:11" runUser="CORP\gokuln" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-06-09T17:15:11.4171032+05:30" queuing="2026-06-09T17:15:11.4171042+05:30" start="2026-06-09T17:14:20.6310330+05:30" finish="2026-06-09T17:15:47.3548032+05:30" />
+  <TestSettings name="default" id="7d809af8-6234-4024-884e-8309ce94266e">
+    <Deployment runDeploymentRoot="gokuln_LIN-5CG3091ZV3_2026-06-09_17_15_11" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="916a57f1-6b29-4b2f-9a4b-99fdd14b75e0" testId="f84412b3-9921-7bbf-c707-abd2fbaae1e3" testName="ValidLoginTest" computerName="LIN-5CG3091ZV3" duration="00:00:35.8875120" startTime="2026-06-09T17:15:11.2985517+05:30" endTime="2026-06-09T17:15:47.1860642+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="916a57f1-6b29-4b2f-9a4b-99fdd14b75e0">
+      <Output>
+        <StdOut>Global setup before any tests run.&#xD;
+Global teardown after all tests have run.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="542979fb-827d-4263-9097-22d062c3b99e" testId="6c75fa1a-61ea-b812-43fc-fa27ffe898a9" testName="AdminPageNavigationTest" computerName="LIN-5CG3091ZV3" duration="00:00:49.3128780" startTime="2026-06-09T17:14:21.9810626+05:30" endTime="2026-06-09T17:15:11.2937299+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="542979fb-827d-4263-9097-22d062c3b99e">
+      <Output>
+        <StdOut>Global setup before any tests run.&#xD;
+Global teardown after all tests have run.</StdOut>
+        <ErrorInfo>
+          <Message>System.TimeoutException : Timeout 30000ms exceeded.&#xD;
+Call log:&#xD;
+  - waiting for Locator("//ul[@class='oxd-main-menu']//span[text()='Admin']")&#xD;
+    - locator resolved to &lt;span data-v-7b563373="" data-v-6475d26d="" class="oxd-text oxd-text--span oxd-main-menu-item--name"&gt;Admin&lt;/span&gt;&#xD;
+  - attempting click action&#xD;
+    - waiting for element to be visible, enabled and stable&#xD;
+    - element is visible, enabled and stable&#xD;
+    - scrolling into view if needed&#xD;
+    - done scrolling&#xD;
+    - performing click action&#xD;
+    - click action done&#xD;
+    - waiting for scheduled navigations to finish</Message>
+          <StackTrace>   at Microsoft.Playwright.Transport.Connection.InnerSendMessageToServerAsync[T](ChannelOwner object, String method, Dictionary`2 dictionary, Boolean keepNulls) in /_/src/Playwright/Transport/Connection.cs:line 201&#xD;
+   at Microsoft.Playwright.Transport.Connection.WrapApiCallAsync[T](Func`1 action, Boolean isInternal, String title) in /_/src/Playwright/Transport/Connection.cs:line 505&#xD;
+   at playwrightWithCFramework.Base.BasePage.ClickAsync(ILocator locator) in C:\Users\gokuln\OneDrive - Capgemini\Documents\C#Automation\playwrightWithCFramework\base\BasePage.cs:line 30&#xD;
+   at playwrightWithCFramework.Pages.NavigateComponents.NavigateToAdminPageAsync() in C:\Users\gokuln\OneDrive - Capgemini\Documents\C#Automation\playwrightWithCFramework\pages\NavigateComponents.cs:line 23&#xD;
+   at playwrightWithCFramework.Tests.Test.AdminPageNavigationTest() in C:\Users\gokuln\OneDrive - Capgemini\Documents\C#Automation\playwrightWithCFramework\tests\Test.cs:line 30&#xD;
+   at NUnit.Framework.Internal.TaskAwaitAdapter.GenericAdapter`1.BlockUntilCompleted()&#xD;
+   at NUnit.Framework.Internal.MessagePumpStrategy.NoMessagePumpStrategy.WaitForCompletion(AwaitAdapter awaiter)&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await[TResult](TestExecutionContext context, Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.AsyncToSyncAdapter.Await(TestExecutionContext context, Func`1 invoke)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.RunTestMethod(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)&#xD;
+   at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.&lt;&gt;c__DisplayClass1_0.&lt;Execute&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.Commands.DelegatingTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AdminPageNavigationTest" storage="c:\users\gokuln\onedrive - capgemini\documents\c#automation\playwrightwithcframework\bin\debug\net10.0\playwrightwithcframework.dll" id="6c75fa1a-61ea-b812-43fc-fa27ffe898a9">
+      <Execution id="542979fb-827d-4263-9097-22d062c3b99e" />
+      <TestMethod codeBase="C:\Users\gokuln\OneDrive - Capgemini\Documents\C#Automation\playwrightWithCFramework\bin\Debug\net10.0\playwrightWithCFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="playwrightWithCFramework.Tests.Test" name="AdminPageNavigationTest" />
+    </UnitTest>
+    <UnitTest name="ValidLoginTest" storage="c:\users\gokuln\onedrive - capgemini\documents\c#automation\playwrightwithcframework\bin\debug\net10.0\playwrightwithcframework.dll" id="f84412b3-9921-7bbf-c707-abd2fbaae1e3">
+      <Execution id="916a57f1-6b29-4b2f-9a4b-99fdd14b75e0" />
+      <TestMethod codeBase="C:\Users\gokuln\OneDrive - Capgemini\Documents\C#Automation\playwrightWithCFramework\bin\Debug\net10.0\playwrightWithCFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="playwrightWithCFramework.Tests.Test" name="ValidLoginTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="f84412b3-9921-7bbf-c707-abd2fbaae1e3" executionId="916a57f1-6b29-4b2f-9a4b-99fdd14b75e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c75fa1a-61ea-b812-43fc-fa27ffe898a9" executionId="542979fb-827d-4263-9097-22d062c3b99e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 1.0.0.0: Test execution started&#xD;
+Running all tests in C:\Users\gokuln\OneDrive - Capgemini\Documents\C#Automation\playwrightWithCFramework\bin\Debug\net10.0\playwrightWithCFramework.dll&#xD;
+   NUnit3TestExecutor discovered 2 of 2 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Global setup before any tests run.&#xD;
+Global teardown after all tests have run.&#xD;
+&#xD;
+Global setup before any tests run.&#xD;
+Global teardown after all tests have run.&#xD;
+&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

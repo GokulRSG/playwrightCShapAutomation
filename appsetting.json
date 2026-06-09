@@ -1,0 +1,7 @@
+{
+    "Environment": "QA",
+    "BaseUrl": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "Browser": "Chrome",
+    "Headless": false,
+    "Timeout": 30000
+}
